@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Image Demo</title>
+    <title>Video Demo</title>
     <style>
-        /* 图片容器样式 */
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* 让图片容器占据整个视窗高度，你也可以调整这个值 */
+        /* 页面布局样式 */
+        .container {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* 摘要样式 */
+        .summary {
+            font-size: 16px;
+            margin-top: 10px;
         }
 
         /* 图片样式 */
-        img {
+        .image {
             max-width: 100%;
-            max-height: 100%;
+            margin-top: 20px;
+        }
+
+        /* 方法样式 */
+        .method {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        /* 视频样式 */
+        video {
+            max-width: 100%;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="image-container">
-        <!-- 图片 -->
-        <img src="pic.jpg" alt="图片">
+    <div class="container">
+        <!-- 标题 -->
+        <h1>标题</h1>
+
+        <!-- 摘要 -->
+        <p class="summary">摘要内容</p>
+
+        <!-- 图片1 -->
+        <img class="image" src="image1.jpg" alt="图片1">
+
+        <!-- 图片2 -->
+        <img class="image" src="image2.jpg" alt="图片2">
+
+        <!-- 方法 -->
+        <p class="method">方法描述</p>
+
+        <!-- 视频 -->
+        <video controls>
+            <source src="2017_gen.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 </body>
 </html>
